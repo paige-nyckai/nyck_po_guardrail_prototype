@@ -1,0 +1,94 @@
+[
+  {
+    "po_id": "PO-001-PASS",
+    "status": "PASS",
+    "order_value": "400.00",
+    "currency": "USD",
+    "findings": [],
+    "policy_id": "DEMO-PO-GUARDRAILS-v1",
+    "read_only": true
+  },
+  {
+    "po_id": "PO-002-ITEM-MOQ",
+    "status": "FAIL",
+    "order_value": "120.00",
+    "currency": "USD",
+    "findings": [
+      {
+        "severity": "FAIL",
+        "code": "ITEM_MOQ",
+        "message": "B: ordered 20, minimum 50",
+        "item_id": "B"
+      }
+    ],
+    "policy_id": "DEMO-PO-GUARDRAILS-v1",
+    "read_only": true
+  },
+  {
+    "po_id": "PO-003-PACK",
+    "status": "FAIL",
+    "order_value": "240.00",
+    "currency": "USD",
+    "findings": [
+      {
+        "severity": "FAIL",
+        "code": "PACK_MULTIPLE",
+        "message": "C: ordered 60, must be multiple of 25",
+        "item_id": "C"
+      }
+    ],
+    "policy_id": "DEMO-PO-GUARDRAILS-v1",
+    "read_only": true
+  },
+  {
+    "po_id": "PO-004-SUPPLIER-MIN",
+    "status": "FAIL",
+    "order_value": "480.00",
+    "currency": "USD",
+    "findings": [
+      {
+        "severity": "FAIL",
+        "code": "SUPPLIER_MIN_VALUE",
+        "message": "Order $480.00 is below supplier minimum $500.00"
+      }
+    ],
+    "policy_id": "DEMO-PO-GUARDRAILS-v1",
+    "read_only": true
+  },
+  {
+    "po_id": "PO-005-REVIEW",
+    "status": "REVIEW",
+    "order_value": "300.00",
+    "currency": "USD",
+    "findings": [
+      {
+        "severity": "REVIEW",
+        "code": "PRICE_INCREASE",
+        "message": "F: price increase 20.00% exceeds 10%",
+        "item_id": "F"
+      },
+      {
+        "severity": "REVIEW",
+        "code": "SPEND_INCREASE",
+        "message": "Spend increase 50.00% exceeds 15%"
+      }
+    ],
+    "policy_id": "DEMO-PO-GUARDRAILS-v1",
+    "read_only": true
+  },
+  {
+    "po_id": "PO-006-INVALID-UNIT",
+    "status": "ERROR",
+    "order_value": null,
+    "currency": "USD",
+    "findings": [
+      {
+        "severity": "FAIL",
+        "code": "INVALID_INPUT",
+        "message": "G: demo supports only ea units"
+      }
+    ],
+    "policy_id": "DEMO-PO-GUARDRAILS-v1",
+    "read_only": true
+  }
+]

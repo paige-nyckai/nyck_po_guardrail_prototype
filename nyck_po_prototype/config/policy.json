@@ -1,0 +1,7 @@
+{
+  "policy_id": "DEMO-PO-GUARDRAILS-v1",
+  "max_spend_increase_pct": "15",
+  "max_price_increase_pct": "10",
+  "require_approval_for_changes": true,
+  "currency": "USD"
+}

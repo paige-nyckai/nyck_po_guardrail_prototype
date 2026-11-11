@@ -1,0 +1,119 @@
+[
+  {
+    "po_id": "PO-001-PASS",
+    "supplier_id": "SUP-A",
+    "currency": "USD",
+    "supplier_min_order_value": "300",
+    "baseline_order_value": "400",
+    "lines": [
+      {
+        "item_id": "A",
+        "uom": "ea",
+        "quantity": 100,
+        "item_moq": 50,
+        "pack_multiple": 25,
+        "unit_price": "4",
+        "previous_unit_price": "4"
+      }
+    ]
+  },
+  {
+    "po_id": "PO-002-ITEM-MOQ",
+    "supplier_id": "SUP-A",
+    "currency": "USD",
+    "supplier_min_order_value": "100",
+    "baseline_order_value": "120",
+    "lines": [
+      {
+        "item_id": "B",
+        "uom": "ea",
+        "quantity": 20,
+        "item_moq": 50,
+        "pack_multiple": 10,
+        "unit_price": "6",
+        "previous_unit_price": "6"
+      }
+    ]
+  },
+  {
+    "po_id": "PO-003-PACK",
+    "supplier_id": "SUP-A",
+    "currency": "USD",
+    "supplier_min_order_value": "100",
+    "baseline_order_value": "240",
+    "lines": [
+      {
+        "item_id": "C",
+        "uom": "ea",
+        "quantity": 60,
+        "item_moq": 50,
+        "pack_multiple": 25,
+        "unit_price": "4",
+        "previous_unit_price": "4"
+      }
+    ]
+  },
+  {
+    "po_id": "PO-004-SUPPLIER-MIN",
+    "supplier_id": "SUP-B",
+    "currency": "USD",
+    "supplier_min_order_value": "500",
+    "baseline_order_value": "480",
+    "lines": [
+      {
+        "item_id": "D",
+        "uom": "ea",
+        "quantity": 75,
+        "item_moq": 50,
+        "pack_multiple": 25,
+        "unit_price": "4",
+        "previous_unit_price": "4"
+      },
+      {
+        "item_id": "E",
+        "uom": "ea",
+        "quantity": 30,
+        "item_moq": 20,
+        "pack_multiple": 10,
+        "unit_price": "6",
+        "previous_unit_price": "6"
+      }
+    ]
+  },
+  {
+    "po_id": "PO-005-REVIEW",
+    "supplier_id": "SUP-C",
+    "currency": "USD",
+    "supplier_min_order_value": "200",
+    "baseline_order_value": "200",
+    "lines": [
+      {
+        "item_id": "F",
+        "uom": "ea",
+        "quantity": 100,
+        "item_moq": 50,
+        "pack_multiple": 25,
+        "unit_price": "3",
+        "previous_unit_price": "2.5"
+      }
+    ]
+  },
+  {
+    "po_id": "PO-006-INVALID-UNIT",
+    "supplier_id": "SUP-D",
+    "currency": "USD",
+    "supplier_min_order_value": "0",
+    "baseline_order_value": "100",
+    "lines": [
+      {
+        "item_id": "G",
+        "uom": "kg",
+        "quantity": 20,
+        "item_moq": 10,
+        "pack_multiple": 5,
+        "unit_price": "5",
+        "previous_unit_price": "5"
+      }
+    ]
+  }
+]
